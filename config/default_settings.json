@@ -1,0 +1,45 @@
+{
+  "application": {
+    "name": "HPLC Viewer",
+    "version": "1.0.0",
+    "default_pda_wavelengths_nm": [254.0, 365.0]
+  },
+  "visualization": {
+    "mode": "Overlay",
+    "active_detectors": ["UV", "PDA", "ELSD"],
+    "x_min": null,
+    "x_max": null,
+    "y_min_uv": null,
+    "y_max_uv": null,
+    "y_min_elsd": null,
+    "y_max_elsd": null,
+    "line_width": 1.8,
+    "opacity": 0.9,
+    "show_grid": true,
+    "show_legend": true,
+    "sync_x_axes": true,
+    "stacked_spacing": 0.05,
+    "show_baseline": false,
+    "normalization_mode": "None",
+    "palette": "Okabe-Ito (Colorblind Safe)"
+  },
+  "alignment": {
+    "mode": "No alignment",
+    "reference_id": null,
+    "region_start_min": null,
+    "region_end_min": null,
+    "max_shift_min": 1.5
+  },
+  "export": {
+    "figure_format": "png",
+    "width_px": 1200,
+    "height_px": 750,
+    "dpi_scale": 2,
+    "font_size": 13,
+    "legend_position": "right",
+    "title": "",
+    "x_axis_label": "Retention Time (min)",
+    "y_axis_label_uv": "Absorbance (AU)",
+    "y_axis_label_elsd": "ELSD Signal (LSU)"
+  }
+}

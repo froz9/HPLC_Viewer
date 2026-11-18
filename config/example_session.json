@@ -1,0 +1,92 @@
+{
+  "application": {
+    "name": "HPLC Viewer",
+    "version": "1.0.0",
+    "schema": "hplc_viewer_session_v1"
+  },
+  "samples": [
+    {
+      "file_name": "HPLC_RAW_EXPORT1276.arw",
+      "original_sample_name": "01006-18-1",
+      "sample_display_name": "Sample 01006-18-1",
+      "injection_id": "1",
+      "channel": "ELSD Signal",
+      "wavelength_nm": null,
+      "assigned_detector": "ELSD",
+      "color": "#0072B2",
+      "visible": true,
+      "is_aligned": false,
+      "time_shift_min": 0.0,
+      "alignment_method": "None",
+      "alignment_reference_id": null
+    },
+    {
+      "file_name": "HPLC_RAW_EXPORT1278.arw",
+      "original_sample_name": "01006-18-1",
+      "sample_display_name": "Sample 01006-18-1",
+      "injection_id": "1",
+      "channel": "2998 Ch1 254nm@1.2nm",
+      "wavelength_nm": 254.0,
+      "assigned_detector": "UV",
+      "color": "#0072B2",
+      "visible": true,
+      "is_aligned": false,
+      "time_shift_min": 0.0,
+      "alignment_method": "None",
+      "alignment_reference_id": null
+    },
+    {
+      "file_name": "HPLC_RAW_EXPORT1284.arw",
+      "original_sample_name": "01006-18-2",
+      "sample_display_name": "Sample 01006-18-2 (Aligned)",
+      "injection_id": "1",
+      "channel": "2998 Ch1 254nm@1.2nm",
+      "wavelength_nm": 254.0,
+      "assigned_detector": "UV",
+      "color": "#D55E00",
+      "visible": true,
+      "is_aligned": true,
+      "time_shift_min": -0.015,
+      "alignment_method": "Automatic (Cross-Correlation)",
+      "alignment_reference_id": null
+    }
+  ],
+  "visualization": {
+    "mode": "Overlay",
+    "active_detectors": ["UV", "PDA", "ELSD"],
+    "selected_wavelengths": [254.0, 365.0],
+    "individual_trace_id": null,
+    "x_range": null,
+    "y_range_uv": null,
+    "y_range_elsd": null,
+    "line_width": 1.8,
+    "opacity": 0.9,
+    "show_grid": true,
+    "show_legend": true,
+    "sync_x_axes": true,
+    "stacked_spacing": 0.04,
+    "show_baseline": false,
+    "normalization_mode": "None",
+    "use_aligned_time": true,
+    "palette": "Okabe-Ito (Colorblind Safe)"
+  },
+  "alignment": {
+    "mode": "Automatic alignment (Cross-Correlation)",
+    "reference_id": null,
+    "region_start_min": 2.0,
+    "region_end_min": 28.0,
+    "max_shift_min": 1.5
+  },
+  "export": {
+    "figure_format": "png",
+    "width_px": 1200,
+    "height_px": 750,
+    "dpi_scale": 2,
+    "font_size": 13,
+    "legend_position": "right",
+    "title": "HPLC Comparison — UV (254 nm) & ELSD",
+    "x_axis_label": "Retention Time (min)",
+    "y_axis_label_uv": "Absorbance (AU)",
+    "y_axis_label_elsd": "ELSD Signal (LSU)"
+  }
+}
